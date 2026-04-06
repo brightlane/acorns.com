@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +33,7 @@
       margin: 0;
       line-height: 1.6;
       scroll-behavior: smooth;
+      padding-top: 30px; /* Move everything up */
     }
 
     header {
@@ -78,8 +80,8 @@
       background: linear-gradient(to bottom, #3b82f6, #1e3a8a);
       color: #fff;
       border-radius: 16px;
-      margin-top: 4rem;
       position: relative;
+      margin-top: 0; /* Remove margin to move content up */
     }
 
     .hero h1 {
@@ -115,7 +117,7 @@
     .container {
       max-width: 1100px;
       margin: auto;
-      padding: 40px 1.5rem;
+      padding: 20px 1.5rem;
     }
 
     #features ul {
@@ -259,14 +261,14 @@
   </header>
 
   <section class="hero">
-    <h1>Start Saving with Acorns</h1>
-    <p>Invest in your future. Grow your money with Acorns.</p>
+    <h1><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" style="color: white;">Start Saving with Acorns</a></h1>
+    <p><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" style="color: white;">Invest in your future. Grow your money with Acorns.</a></p>
     <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" class="cta-btn">Start Investing</a>
     <div id="current-date-time"></div>
   </section>
 
   <section class="container" id="features">
-    <h2>Features That Make Acorns a Game-Changer</h2>
+    <h2><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" style="color: var(--brand);">Features That Make Acorns a Game-Changer</a></h2>
     <ul>
       <li>Simple and easy to use interface</li>
       <li>Automated saving and investing</li>
@@ -277,26 +279,21 @@
   </section>
 
   <section class="container" id="testimonials">
-    <h2>What Our Users Are Saying</h2>
+    <h2><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" style="color: var(--brand);">What Our Users Are Saying</a></h2>
     <div class="testimonial-container">
       <div class="testimonial">
-        <p>"I never thought saving could be this easy. Acorns changed my life!"</p>
+        <p>"I never thought saving could be this easy. Acorns made investing stress-free."</p>
         <div class="author">John D.</div>
       </div>
       <div class="testimonial">
-        <p>"Acorns helps me grow my savings effortlessly, without any hassle!"</p>
+        <p>"Acorns has been my go-to investment tool. The round-ups have helped me save without thinking!"</p>
         <div class="author">Sarah L.</div>
-      </div>
-      <div class="testimonial">
-        <p>"I love the round-up feature. Small amounts add up quickly!"</p>
-        <div class="author">Mark P.</div>
       </div>
     </div>
   </section>
 
-  <section class="container" id="cta">
-    <h2>Start Saving and Growing Your Money Today</h2>
-    <p>Sign up now and begin investing with Acorns. No experience needed!</p>
+  <section id="cta" class="container">
+    <h2><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" style="color: var(--brand);">Start Investing Today</a></h2>
     <form class="email-form" onsubmit="redirectToAffiliate(event)">
       <input type="email" id="email" required placeholder="Enter your email">
       <button type="submit">Start Now</button>
@@ -327,7 +324,7 @@
 
     // Exit Intent Modal Logic
     let exitModalShown = false;
-    document.addEventListener("mouseout", function(e) {
+    document.addEventListener("mouseout", function (e) {
       if (!exitModalShown && e.clientY < 0) {
         document.getElementById("exit-modal").style.display = "flex";
         exitModalShown = true;
@@ -341,13 +338,13 @@
       if (email) window.location.href = "https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885";
     }
 
-    // Close the exit modal when CTA button is clicked
-    document.querySelector('.cta-btn').addEventListener('click', function() {
+    // Close Modal when CTA button is clicked
+    document.querySelector('.cta-btn').addEventListener('click', function () {
       document.getElementById("exit-modal").style.display = "none";
     });
 
     // Close Modal when clicked outside
-    document.getElementById('exit-modal').addEventListener('click', function(e) {
+    document.getElementById('exit-modal').addEventListener('click', function (e) {
       if (e.target === this) {
         this.style.display = 'none';
       }
@@ -355,4 +352,5 @@
   </script>
 
 </body>
+
 </html>
