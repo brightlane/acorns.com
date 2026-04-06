@@ -1,23 +1,220 @@
-    #exit-modal .modal-content {
-      background: #fff;
-      padding: 40px;
-      border-radius: var(--radius);
-      text-align: center;
-      max-width: 500px;
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="index, follow" />
+  <meta name="description" content="Start investing with Acorns! Round up your purchases, build wealth, and plan for the future with automated investing." />
+  <meta name="keywords" content="Acorns, investing, automated investing, round-ups, wealth building, financial future" />
+  <title>Invest with Acorns</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="icon" href="https://acorns.com/favicon.ico" />
+
+  <!-- Font Awesome Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  <style>
+    :root {
+      --primary-color: #007bff;
+      --secondary-color: #28a745;
+      --background-color: #f4f7fc;
+      --text-color: #333;
+      --accent-color: #f39c12;
+      --button-hover-color: #0056b3;
+      --border-radius: 12px;
+      --shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      --max-width: 1200px;
     }
 
-    #exit-modal .modal-content button {
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: var(--background-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    header {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px 0;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0;
+      font-weight: 700;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       margin-top: 20px;
-      padding: 12px 20px;
+    }
+
+    nav a {
+      margin: 0 15px;
+      color: white;
+      font-size: 1.2rem;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--accent-color);
+    }
+
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(135deg, #00A600, #006600);
+      color: white;
+      border-radius: 16px;
+      margin-top: 30px;
+      box-shadow: var(--shadow);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 20px;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .cta-btn {
+      background-color: var(--secondary-color);
+      color: white;
+      font-size: 1.2rem;
+      padding: 15px 30px;
       border: none;
-      background: var(--brand);
-      color: #fff;
-      border-radius: var(--radius);
+      border-radius: var(--border-radius);
+      text-decoration: none;
+      transition: background-color 0.3s;
+    }
+
+    .cta-btn:hover {
+      background-color: var(--button-hover-color);
+    }
+
+    .features, .testimonials, .footer {
+      text-align: center;
+    }
+
+    .features h2, .testimonials h2 {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin: 0 auto;
+      max-width: var(--max-width);
+    }
+
+    .feature-item, .testimonial-item {
+      background-color: white;
+      padding: 20px;
+      border-radius: var(--border-radius);
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
       cursor: pointer;
     }
 
-    #exit-modal .modal-content button:hover {
-      background: var(--brand-dark);
+    .feature-item:hover, .testimonial-item:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .feature-item h3, .testimonial-item p {
+      font-weight: 600;
+    }
+
+    .testimonial-item p {
+      font-style: italic;
+    }
+
+    .testimonial-item .author {
+      font-weight: 700;
+      margin-top: 10px;
+    }
+
+    .footer {
+      background-color: var(--primary-color);
+      color: white;
+      padding: 20px;
+    }
+
+    .footer p {
+      margin: 0;
+      font-size: 1rem;
+    }
+
+    .social-links a {
+      color: white;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      color: var(--accent-color);
+    }
+
+    /* Mobile Optimization */
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.5rem;
+      }
+
+      .cta-btn {
+        padding: 12px 25px;
+        font-size: 1.1rem;
+      }
+
+      .feature-list {
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+
+    /* Smooth Animation for Hero Section */
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -25,184 +222,68 @@
 <body>
 
   <header>
-    <div class="container">
-      <nav>
-        <a href="#" class="logo">Invest with Acorns</a>
-        <ul class="nav-links">
-          <li><a href="#features">Features</a></li>
-          <li><a href="#comparison">Comparison</a></li>
-          <li><a href="#testimonials">Testimonials</a></li>
-          <li><a href="#video-demo">Demo</a></li>
-          <li><a href="#cta">Get Started</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>Start Investing with Acorns</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#cta">Get Started</a>
+    </nav>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero" id="hero">
-    <h1>Start Investing with Acorns Today!</h1>
-    <p>Make your money work for you with Acorns. Invest your spare change into a diversified portfolio.</p>
+  <section class="hero">
+    <h1>Investing Made Easy with Acorns</h1>
+    <p>Round up your purchases and invest your spare change into a diversified portfolio.</p>
     <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="cta-btn">Get Started Now</a>
-    <div id="timer">Offer ends in <span id="countdown"></span></div>
   </section>
 
-  <!-- Features Section -->
-  <section class="container" id="features">
+  <section class="features" id="features">
     <h2>Why Choose Acorns?</h2>
-    <ul>
-      <li>Automated Investing with Round-Ups</li>
-      <li>Personalized Investment Portfolios</li>
-      <li>Low Monthly Fees with Transparent Pricing</li>
-      <li>Access to Financial Advisors for Expert Guidance</li>
-      <li>Easy-to-Use Mobile App</li>
-      <li>Automatic Rebalancing of Your Portfolio</li>
-    </ul>
+    <div class="feature-list">
+      <div class="feature-item">
+        <h3>Automated Investing</h3>
+        <p>Invest automatically with round-ups on your daily purchases. No effort required!</p>
+      </div>
+      <div class="feature-item">
+        <h3>Personalized Portfolios</h3>
+        <p>Acorns creates a personalized investment portfolio for you based on your goals.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Low Fees</h3>
+        <p>Acorns keeps its fees low, helping you build wealth faster with fewer costs.</p>
+      </div>
+      <div class="feature-item">
+        <h3>Financial Advice</h3>
+        <p>Access financial advice and get expert guidance on managing your wealth.</p>
+      </div>
+    </div>
   </section>
 
-  <!-- Comparison Section -->
-  <section class="container" id="comparison">
-    <h2>Acorns vs. Other Investment Apps</h2>
-    <table>
-      <tr>
-        <th>Feature</th>
-        <th>Acorns</th>
-        <th>Competitor</th>
-      </tr>
-      <tr>
-        <td>Automated Investing</td>
-        <td>Yes</td>
-        <td>No</td>
-      </tr>
-      <tr>
-        <td>Low Fees</td>
-        <td>Yes</td>
-        <td>High</td>
-      </tr>
-      <tr>
-        <td>Financial Advisor Access</td>
-        <td>Yes</td>
-        <td>No</td>
-      </tr>
-      <tr>
-        <td>Round-Up Feature</td>
-        <td>Yes</td>
-        <td>No</td>
-      </tr>
-    </table>
-  </section>
-
-  <!-- Testimonials -->
-  <section class="container" id="testimonials">
-    <h2>What Our Users Are Saying</h2>
-    <div class="testimonial-container" id="testimonial-container">
-      <div class="testimonial">
-        <p>"Acorns made investing easy and accessible. Now I’m building wealth every time I buy coffee!"</p>
+  <section class="testimonials" id="testimonials">
+    <h2>What People Are Saying</h2>
+    <div class="feature-list">
+      <div class="testimonial-item">
+        <p>"Acorns made investing easy for me. Now I’m building wealth without thinking about it!"</p>
         <div class="author">Jenna W.</div>
       </div>
-      <div class="testimonial">
-        <p>"I love how Acorns rounds up my purchases and invests my spare change automatically. It’s effortless!"</p>
+      <div class="testimonial-item">
+        <p>"The round-up feature is amazing. I didn’t even realize how much I was saving until I saw my balance grow!"</p>
         <div class="author">Greg T.</div>
       </div>
-      <div class="testimonial">
-        <p>"The Acorns app is simple to use, and the financial advisors have been invaluable in helping me grow my portfolio."</p>
-        <div class="author">Lily R.</div>
+      <div class="testimonial-item">
+        <p>"Acorns helps me save and invest automatically. It’s the perfect tool for people who want to grow wealth without the hassle."</p>
+        <div class="author">Alex M.</div>
       </div>
     </div>
   </section>
 
-  <!-- Video Demo Section -->
-  <section id="video-demo">
-    <h2>See Acorns in Action</h2>
-    <video controls preload="none" poster="https://yourdomain.com/images/video-poster.jpg">
-      <source src="https://yourdomain.com/videos/demo.mp4" type="video/mp4">
-      Your browser does not support the video tag.
-    </video>
-  </section>
-
-  <!-- CTA Section -->
-  <section class="container" id="cta">
-    <h2>Start Investing Today</h2>
-    <p>Get started with Acorns in just a few minutes. Enter your email to join now. No spam—just wealth building!</p>
-    <form class="email-form" onsubmit="redirectToAffiliate(event)">
-      <input type="email" id="email" required placeholder="Enter your email" />
-      <button type="submit">Get Started</button>
-    </form>
-  </section>
-
-  <!-- Sticky CTA -->
-  <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="sticky-cta">Start Investing with Acorns</a>
-
-  <!-- Social Media Share Buttons -->
-  <section class="social-share">
-    <a href="https://facebook.com/sharer/sharer.php?u=https://yourdomain.com/affiliate-landing-page" target="_blank" title="Share on Facebook">
-      <i class="fa fa-facebook"></i>
-    </a>
-    <a href="https://twitter.com/share?url=https://yourdomain.com/affiliate-landing-page" target="_blank" title="Share on Twitter">
-      <i class="fa fa-twitter"></i>
-    </a>
-    <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://yourdomain.com/affiliate-landing-page" target="_blank" title="Share on LinkedIn">
-      <i class="fa fa-linkedin"></i>
-    </a>
-  </section>
-
-  <!-- Exit Intent Modal -->
-  <div id="exit-modal">
-    <div class="modal-content">
-      <h2>Hold on! Don’t Leave Yet!</h2>
-      <p>Take the first step towards building your financial future. Join Acorns today before the offer ends!</p>
-      <button onclick="redirectToAffiliateModal()">Start Investing Now</button>
+  <section class="footer">
+    <p>&copy; 2026 Acorns, Inc. All Rights Reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/acorns" target="_blank"><i class="fa fa-facebook"></i></a>
+      <a href="https://twitter.com/acorns" target="_blank"><i class="fa fa-twitter"></i></a>
+      <a href="https://www.linkedin.com/company/acorns" target="_blank"><i class="fa fa-linkedin"></i></a>
     </div>
-  </div>
-
-  <footer>
-    <p>&copy; 2026 Acorns. All Rights Reserved.</p>
-  </footer>
-
-  <script>
-    // Countdown Timer
-    (function () {
-      const countdownEl = document.getElementById("countdown");
-      const end = Date.now() + 6 * 60 * 60 * 1000; // 6 hours
-      setInterval(() => {
-        const dist = end - Date.now();
-        if (dist < 0) return (countdownEl.textContent = "Expired");
-        const h = Math.floor(dist / (1000 * 60 * 60));
-        const m = Math.floor((dist % (1000 * 60 * 60)) / (1000 * 60));
-        const s = Math.floor((dist % (1000 * 60)) / 1000);
-        countdownEl.textContent = `${h}h ${m}m ${s}s`;
-      }, 1000);
-    })();
-
-    // Redirect Function
-    function redirectToAffiliate(e) {
-      e.preventDefault();
-      const email = document.getElementById("email").value;
-      if (email) window.location.href = "https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo";
-    }
-
-    function redirectToAffiliateModal() {
-      window.location.href = "https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo";
-    }
-
-    // Exit Intent Modal
-    let exitModalShown = false;
-    document.addEventListener("mouseout", function (e) {
-      if (!exitModalShown && e.clientY < 0) {
-        document.getElementById("exit-modal").style.display = "flex";
-        exitModalShown = true;
-      }
-    });
-
-    // Rotate Testimonials
-    const testimonials = document.querySelectorAll(".testimonial");
-    let currentTestimonial = 0;
-    setInterval(() => {
-      testimonials.forEach((t, i) => t.style.display = i === currentTestimonial ? "block" : "none");
-      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
-    }, 5000);
-  </script>
+  </section>
 
 </body>
-
 </html>
