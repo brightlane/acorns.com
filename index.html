@@ -1,140 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="description" content="Start building your wealth with Acorns today! Invest your spare change with the easiest and most automated investment app." />
-  <meta name="keywords" content="Invest, Acorns, Automatic Round-ups, Wealth, Financial Future" />
-  <title>Start Investing with Acorns | Automate Your Savings</title>
-  <link rel="canonical" href="https://acorns.com" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="https://acorns.com/favicon.ico" type="image/png" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="index, follow">
+  <meta name="description" content="Investing with Acorns is easier than ever. Start saving today.">
+  <meta name="keywords" content="Acorns, invest, start saving, financial planning, affiliate">
+  <title>Investing with Acorns</title>
+  <link rel="icon" href="https://acorns.com/favicon.ico" type="image/x-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <style>
     :root {
-      --primary-color: #2d9cdb;
-      --secondary-color: #1e3a8a;
-      --text-color: #333;
-      --bg-color: #f8fafc;
-      --card-color: #fff;
-      --accent-color: #f59e0b;
-      --border-color: #e2e8f0;
+      --brand: #3b82f6;
+      --brand-dark: #1e3a8a;
+      --text: #1e293b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --accent: #f59e0b;
+      --border: #e2e8f0;
       --radius: 16px;
       --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
     }
 
     body {
       font-family: "Inter", sans-serif;
-      background-color: var(--bg-color);
-      color: var(--text-color);
+      background: var(--bg);
+      color: var(--text);
       margin: 0;
       line-height: 1.6;
       scroll-behavior: smooth;
     }
 
     header {
-      background-color: #fff;
-      padding: 15px 25px;
+      position: sticky;
+      top: 0;
+      background: #fff;
       box-shadow: var(--shadow);
+      z-index: 100;
     }
 
-    header .logo {
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 1.5rem;
+    }
+
+    .logo {
       font-weight: 700;
-      color: var(--primary-color);
-      font-size: 1.5rem;
+      color: var(--brand);
       text-decoration: none;
+      font-size: 1.3rem;
     }
 
-    header nav a {
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1rem;
+    }
+
+    .nav-links a {
       text-decoration: none;
-      color: var(--text-color);
+      color: var(--text);
       font-weight: 500;
-      margin-right: 20px;
     }
 
-    header nav a:hover {
-      color: var(--primary-color);
+    .nav-links a:hover {
+      color: var(--brand);
     }
 
-    section {
-      padding: 40px 20px;
+    .hero {
+      text-align: center;
+      padding: 80px 20px;
+      background: linear-gradient(to bottom, #3b82f6, #1e3a8a);
+      color: #fff;
+      border-radius: 16px;
+      margin-top: 4rem;
+      position: relative;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      margin-bottom: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .cta-btn {
-      background-color: var(--primary-color);
-      color: white;
-      padding: 15px 30px;
+      background: var(--brand);
+      color: #fff;
+      padding: 14px 28px;
       border-radius: var(--radius);
       text-decoration: none;
       font-weight: 700;
-      transition: background-color 0.3s ease;
+      transition: background 0.3s;
     }
 
     .cta-btn:hover {
-      background-color: var(--secondary-color);
+      background: var(--brand-dark);
     }
 
-    .feature-item {
-      margin-bottom: 20px;
-    }
-
-    .feature-item h3 {
-      color: var(--primary-color);
-      font-size: 1.5rem;
-    }
-
-    .feature-item p {
-      font-size: 1.1rem;
-      color: var(--text-color);
-    }
-
-    .testimonials {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-around;
-    }
-
-    .testimonial-item {
-      background-color: var(--card-color);
-      padding: 20px;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      width: 280px;
-      text-align: center;
-      margin: 15px 0;
-    }
-
-    .testimonial-item p {
-      font-size: 1.1rem;
-      font-style: italic;
-    }
-
-    .testimonial-item .author {
+    #current-date-time {
+      font-size: 1rem;
       margin-top: 10px;
       font-weight: bold;
     }
 
-    .cta-section {
+    .container {
+      max-width: 1100px;
+      margin: auto;
+      padding: 40px 1.5rem;
+    }
+
+    #features ul {
+      list-style-type: none;
+      padding: 0;
+      font-size: 1.1rem;
+    }
+
+    #features li {
+      margin: 10px 0;
+    }
+
+    .testimonial-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .testimonial {
+      display: inline-block;
+      margin: 15px;
+      padding: 20px;
+      background-color: var(--card);
+      border-radius: var(--radius);
+      box-shadow: var(--shadow);
+      max-width: 300px;
       text-align: center;
+      font-style: italic;
     }
 
-    .cta-section h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+    .testimonial .author {
+      font-weight: bold;
+      margin-top: 10px;
+      font-style: normal;
     }
 
-    .footer {
-      background-color: #fff;
-      border-top: 1px solid var(--border-color);
+    .email-form input {
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      width: 70%;
+      max-width: 320px;
+    }
+
+    .email-form button {
+      padding: 12px 18px;
+      background: var(--brand);
+      border: none;
+      border-radius: var(--radius);
+      color: #fff;
+      cursor: pointer;
+      font-weight: 600;
+      margin-left: 10px;
+    }
+
+    .email-form button:hover {
+      background: var(--brand-dark);
+    }
+
+    footer {
+      background: #fff;
+      border-top: 1px solid var(--border);
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
       color: #64748b;
     }
 
-    /* Exit Pop-up */
+    /* Sticky Floating CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 999;
+      background: var(--accent);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: var(--radius);
+      font-weight: bold;
+      box-shadow: var(--shadow);
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+
+    .sticky-cta:hover {
+      background: #d97706;
+    }
+
+    /* Exit-Intent Modal */
     #exit-modal {
       display: none;
       position: fixed;
@@ -142,143 +213,146 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background-color: rgba(0, 0, 0, 0.6);
+      background: rgba(0, 0, 0, 0.6);
       justify-content: center;
       align-items: center;
       z-index: 1000;
-      opacity: 0;
-      transition: opacity 0.5s ease;
-    }
-
-    #exit-modal.show {
-      display: flex;
-      opacity: 1;
     }
 
     #exit-modal .modal-content {
-      background-color: white;
+      background: #fff;
       padding: 40px;
       border-radius: var(--radius);
       text-align: center;
       max-width: 500px;
     }
 
-    #exit-modal button {
-      padding: 12px 18px;
-      background-color: var(--primary-color);
+    #exit-modal .modal-content button {
+      margin-top: 20px;
+      padding: 12px 20px;
       border: none;
+      background: var(--brand);
+      color: #fff;
       border-radius: var(--radius);
-      color: white;
-      font-weight: 600;
       cursor: pointer;
     }
 
-    #exit-modal button:hover {
-      background-color: var(--secondary-color);
+    #exit-modal .modal-content button:hover {
+      background: var(--brand-dark);
     }
   </style>
 </head>
 
 <body>
+
   <header>
-    <a href="https://acorns.com" class="logo">Acorns</a>
-    <nav>
-      <a href="#features">Features</a>
-      <a href="#testimonials">Testimonials</a>
-      <a href="#cta">Get Started</a>
-    </nav>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">Acorns Investment</a>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="#cta">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
 
-  <section class="hero" id="hero">
-    <h1>Invest With Acorns: Start Small, Grow Big</h1>
-    <p>Acorns helps you automatically invest your spare change and build wealth effortlessly. Get started today!</p>
-    <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="cta-btn">Get Started Now</a>
+  <section class="hero">
+    <h1>Start Saving with Acorns</h1>
+    <p>Invest in your future. Grow your money with Acorns.</p>
+    <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" class="cta-btn">Start Investing</a>
+    <div id="current-date-time"></div>
   </section>
 
-  <section id="features">
-    <h2>Features That Make Acorns the Best Investment Tool</h2>
-    <div class="feature-list">
-      <div class="feature-item">
-        <h3><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo">Automatic Round-Ups</a></h3>
-        <p>Acorns automatically rounds up your purchases to the nearest dollar and invests the change. It’s investing without thinking!</p>
-      </div>
-      <div class="feature-item">
-        <h3><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo">Expert Portfolio Management</a></h3>
-        <p>Get access to diversified portfolios managed by experts, so you can grow your wealth without the hassle.</p>
-      </div>
-      <div class="feature-item">
-        <h3><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo">Invest for Your Future</a></h3>
-        <p>Start building your financial future today with as little as $5. Acorns makes investing easy, no matter your experience level.</p>
-      </div>
-    </div>
+  <section class="container" id="features">
+    <h2>Features That Make Acorns a Game-Changer</h2>
+    <ul>
+      <li>Simple and easy to use interface</li>
+      <li>Automated saving and investing</li>
+      <li>Low fees, high returns</li>
+      <li>Round-ups to the nearest dollar</li>
+      <li>Personalized investment plans</li>
+    </ul>
   </section>
 
-  <section class="testimonials" id="testimonials">
+  <section class="container" id="testimonials">
     <h2>What Our Users Are Saying</h2>
-    <div class="testimonial-item">
-      <p>"Acorns has made it so easy to start investing without even thinking about it. My money is growing every day!"</p>
-      <div class="author">- Emily R.</div>
-    </div>
-    <div class="testimonial-item">
-      <p>"I love the simplicity of Acorns. The automatic round-ups really add up, and I'm building wealth without lifting a finger!"</p>
-      <div class="author">- Jason L.</div>
-    </div>
-    <div class="testimonial-item">
-      <p>"As someone who knows little about investing, Acorns has been the perfect solution. It’s easy and automated!"</p>
-      <div class="author">- Sarah D.</div>
+    <div class="testimonial-container">
+      <div class="testimonial">
+        <p>"I never thought saving could be this easy. Acorns changed my life!"</p>
+        <div class="author">John D.</div>
+      </div>
+      <div class="testimonial">
+        <p>"Acorns helps me grow my savings effortlessly, without any hassle!"</p>
+        <div class="author">Sarah L.</div>
+      </div>
+      <div class="testimonial">
+        <p>"I love the round-up feature. Small amounts add up quickly!"</p>
+        <div class="author">Mark P.</div>
+      </div>
     </div>
   </section>
 
-  <section class="cta-section" id="cta">
-    <h2>Start Building Your Wealth Today</h2>
-    <p>Ready to start investing? Click the button below to get started with Acorns and watch your wealth grow!</p>
-    <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="cta-btn">Get Started Now</a>
+  <section class="container" id="cta">
+    <h2>Start Saving and Growing Your Money Today</h2>
+    <p>Sign up now and begin investing with Acorns. No experience needed!</p>
+    <form class="email-form" onsubmit="redirectToAffiliate(event)">
+      <input type="email" id="email" required placeholder="Enter your email">
+      <button type="submit">Start Now</button>
+    </form>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2026 Acorns. All Rights Reserved.</p>
-    <div class="social-links">
-      <a href="https://facebook.com/acorns" target="_blank"><i class="fab fa-facebook"></i></a>
-      <a href="https://twitter.com/acorns" target="_blank"><i class="fab fa-twitter"></i></a>
-      <a href="https://www.linkedin.com/company/acorns" target="_blank"><i class="fab fa-linkedin"></i></a>
-    </div>
-  </footer>
+  <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885" class="sticky-cta">Get Started Now</a>
 
-  <!-- Exit Pop-up Modal -->
   <div id="exit-modal">
     <div class="modal-content">
-      <h2>Wait! Don’t Miss Out!</h2>
-      <p>Before you leave, check out the best deal we have on Acorns — start investing today and get a $10 bonus when you sign up!</p>
-      <button onclick="window.location.href='https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo'">Claim Your $10 Bonus</button>
+      <h2>Don't Leave Yet!</h2>
+      <p>Take advantage of our best deal before you go!</p>
+      <button onclick="redirectToAffiliateModal()">Claim Your Deal</button>
     </div>
   </div>
 
+  <footer>
+    <p>&copy; 2026 Acorns. All Rights Reserved.</p>
+  </footer>
+
   <script>
-    // Lazy Load Exit Pop-up - Trigger on Exit Intent
+    // Date and Time Update
+    function updateDateTime() {
+      const currentDate = new Date();
+      document.getElementById('current-date-time').innerText = `Today is ${currentDate.toLocaleDateString()} | Current time: ${currentDate.toLocaleTimeString()}`;
+    }
+    setInterval(updateDateTime, 1000);
+
+    // Exit Intent Modal Logic
     let exitModalShown = false;
-
-    // Function to handle exit pop-up behavior
-    const showExitPopup = () => {
-      if (!exitModalShown) {
-        document.getElementById("exit-modal").classList.add("show");
+    document.addEventListener("mouseout", function(e) {
+      if (!exitModalShown && e.clientY < 0) {
+        document.getElementById("exit-modal").style.display = "flex";
         exitModalShown = true;
-      }
-    };
-
-    // Event Listener for Mouseout event to detect exit intent
-    document.addEventListener("mouseout", function (e) {
-      if (!exitModalShown && e.clientY < 50) {
-        showExitPopup();
       }
     });
 
-    // Close Modal if user clicks anywhere outside of it
-    document.getElementById("exit-modal").addEventListener("click", function (e) {
-      if (e.target === document.getElementById("exit-modal")) {
-        document.getElementById("exit-modal").classList.remove("show");
+    // Redirect to Affiliate Link
+    function redirectToAffiliate(e) {
+      e.preventDefault();
+      const email = document.getElementById("email").value;
+      if (email) window.location.href = "https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885";
+    }
+
+    // Close the exit modal when CTA button is clicked
+    document.querySelector('.cta-btn').addEventListener('click', function() {
+      document.getElementById("exit-modal").style.display = "none";
+    });
+
+    // Close Modal when clicked outside
+    document.getElementById('exit-modal').addEventListener('click', function(e) {
+      if (e.target === this) {
+        this.style.display = 'none';
       }
     });
   </script>
-</body>
 
+</body>
 </html>
