@@ -237,43 +237,47 @@
   </section>
 
   <section class="features" id="features">
-    <h2>Why Choose Acorns?</h2>
+    <h2><a href="#features" style="color: var(--primary-color); text-decoration: none;">Why Choose Acorns?</a></h2>
     <div class="feature-list">
       <div class="feature-item">
-        <h3>Automated Investing</h3>
+        <a href="#automated-investing"><h3>Automated Investing</h3></a>
         <p>Invest automatically with round-ups on your daily purchases. No effort required!</p>
       </div>
       <div class="feature-item">
-        <h3>Personalized Portfolios</h3>
+        <a href="#personalized-portfolios"><h3>Personalized Portfolios</h3></a>
         <p>Acorns creates a personalized investment portfolio for you based on your goals.</p>
       </div>
       <div class="feature-item">
-        <h3>Low Fees</h3>
+        <a href="#low-fees"><h3>Low Fees</h3></a>
         <p>Acorns keeps its fees low, helping you build wealth faster with fewer costs.</p>
       </div>
       <div class="feature-item">
-        <h3>Financial Advice</h3>
+        <a href="#financial-advice"><h3>Financial Advice</h3></a>
         <p>Access financial advice and get expert guidance on managing your wealth.</p>
       </div>
     </div>
   </section>
 
   <section class="testimonials" id="testimonials">
-    <h2>What People Are Saying</h2>
-    <div class="feature-list">
-      <div class="testimonial-item">
-        <p>"Acorns made investing easy for me. Now I’m building wealth without thinking about it!"</p>
-        <div class="author">Jenna W.</div>
-      </div>
-      <div class="testimonial-item">
-        <p>"The round-up feature is amazing. I didn’t even realize how much I was saving until I saw my balance grow!"</p>
-        <div class="author">Greg T.</div>
-      </div>
-      <div class="testimonial-item">
-        <p>"Acorns helps me save and invest automatically. It’s the perfect tool for people who want to grow wealth without the hassle."</p>
-        <div class="author">Alex M.</div>
-      </div>
+    <h2><a href="#testimonials" style="color: var(--primary-color); text-decoration: none;">What Our Customers Say</a></h2>
+    <div class="testimonial-item">
+      <p>"Acorns helped me start investing with just my spare change. It's been an amazing way to build wealth!"</p>
+      <div class="author">John D.</div>
     </div>
+    <div class="testimonial-item">
+      <p>"I love how simple it is to set up and track my investments with Acorns."</p>
+      <div class="author">Sarah L.</div>
+    </div>
+    <div class="testimonial-item">
+      <p>"I didn't know where to start with investing, but Acorns made it easy!"</p>
+      <div class="author">David M.</div>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Ready to Start Building Wealth?</h2>
+    <p>Get started today with Acorns and start investing your spare change into your future.</p>
+    <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="cta-btn">Sign Up Now</a>
   </section>
 
   <section class="footer">
@@ -285,5 +289,20 @@
     </div>
   </section>
 
+  <script>
+    // Daily Tip Generator
+    const tips = [
+      "Tip of the Day: Start with a small investment, and gradually increase your contributions.",
+      "Tip of the Day: Make sure to set your investment goals before getting started.",
+      "Tip of the Day: Compound interest works best when you start early!",
+      "Tip of the Day: Stay invested through market ups and downs for the best long-term results.",
+      "Tip of the Day: Review your investment portfolio at least once a year."
+    ];
+
+    const today = new Date();
+    const tipOfTheDay = tips[today.getDate() % tips.length];
+    alert(tipOfTheDay);  // You can display this alert however you want in your UI
+  </script>
 </body>
+
 </html>
