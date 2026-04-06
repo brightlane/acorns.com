@@ -1,323 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="robots" content="index, follow" />
-  <meta name="description" content="High-converting affiliate landing page template with SEO optimization, video demo, FAQ, product comparison, testimonials, and automatic content features." />
-  <meta name="keywords" content="affiliate marketing, SEO optimized landing page, affiliate product, ranking tools, conversion boosting" />
-  <title>Affiliate Landing Page Template | Maximize SEO & Conversions</title>
-  <link rel="canonical" href="https://yourdomain.com/affiliate-landing-page" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
-  <link rel="icon" href="https://yourdomain.com/favicon.png" type="image/png" />
-
-  <!-- Structured Data: Product + FAQ + Reviews -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Product",
-        "name": "Affiliate Landing Page Template",
-        "image": "https://yourdomain.com/images/product-hero.jpg",
-        "description": "An SEO and conversion optimized affiliate landing page system built for top Google rankings.",
-        "brand": { "@type": "Organization", "name": "Palmo Kid Digital" },
-        "offers": {
-          "@type": "Offer",
-          "price": "49.00",
-          "priceCurrency": "USD",
-          "availability": "http://schema.org/InStock",
-          "url": "https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo"
-        },
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "68"
-        }
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How do I start investing with Acorns?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Acorns allows you to start investing by rounding up your everyday purchases and automatically investing spare change."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Why should I choose Acorns?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Acorns is an easy-to-use platform for beginner investors who want to grow their wealth through automatic investing."
-            }
-          }
-        ]
-      }
-    ]
-  }
-  </script>
-
-  <style>
-    :root {
-      --brand: #3b82f6;
-      --brand-dark: #1e3a8a;
-      --text: #1e293b;
-      --bg: #f8fafc;
-      --card: #ffffff;
-      --accent: #f59e0b;
-      --border: #e2e8f0;
-      --radius: 16px;
-      --shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
-    }
-
-    body {
-      font-family: "Inter", sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      margin: 0;
-      line-height: 1.6;
-      scroll-behavior: smooth;
-    }
-
-    header {
-      position: sticky;
-      top: 0;
-      background: #fff;
-      box-shadow: var(--shadow);
-      z-index: 100;
-    }
-
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1rem 1.5rem;
-    }
-
-    .logo {
-      font-weight: 700;
-      color: var(--brand);
-      text-decoration: none;
-      font-size: 1.3rem;
-    }
-
-    .nav-links {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 500;
-    }
-
-    .nav-links a:hover {
-      color: var(--brand);
-    }
-
-    .hero {
-      text-align: center;
-      padding: 80px 20px;
-      background: linear-gradient(to bottom, #3b82f6, #1e3a8a);
-      color: #fff;
-      border-radius: 16px;
-      margin-top: 4rem;
-      position: relative;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      margin-bottom: 1.5rem;
-      font-size: 1.2rem;
-    }
-
-    .cta-btn {
-      background: var(--brand);
-      color: #fff;
-      padding: 14px 28px;
-      border-radius: var(--radius);
-      text-decoration: none;
-      font-weight: 700;
-      transition: background 0.3s;
-    }
-
-    .cta-btn:hover {
-      background: var(--brand-dark);
-    }
-
-    #timer {
-      margin-top: 15px;
-      font-weight: 600;
-    }
-
-    .container {
-      max-width: 1100px;
-      margin: auto;
-      padding: 40px 1.5rem;
-    }
-
-    #features ul {
-      list-style-type: none;
-      padding: 0;
-      font-size: 1.1rem;
-    }
-
-    #features li {
-      margin: 10px 0;
-    }
-
-    #comparison table {
-      width: 100%;
-      border-collapse: collapse;
-    }
-
-    #comparison th,
-    #comparison td {
-      padding: 12px;
-      border: 1px solid #ddd;
-    }
-
-    #comparison th {
-      background-color: #f8fafc;
-    }
-
-    .testimonial-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 20px;
-    }
-
-    .testimonial {
-      display: inline-block;
-      margin: 15px;
-      padding: 20px;
-      background-color: var(--card);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      max-width: 300px;
-      text-align: center;
-      font-style: italic;
-    }
-
-    .testimonial .author {
-      font-weight: bold;
-      margin-top: 10px;
-      font-style: normal;
-    }
-
-    .email-form input {
-      padding: 12px;
-      border: 1px solid var(--border);
-      border-radius: var(--radius);
-      width: 70%;
-      max-width: 320px;
-    }
-
-    .email-form button {
-      padding: 12px 18px;
-      background: var(--brand);
-      border: none;
-      border-radius: var(--radius);
-      color: #fff;
-      cursor: pointer;
-      font-weight: 600;
-      margin-left: 10px;
-    }
-
-    .email-form button:hover {
-      background: var(--brand-dark);
-    }
-
-    footer {
-      background: #fff;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9rem;
-      color: #64748b;
-    }
-
-    /* Social Share Buttons */
-    .social-share {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      margin-top: 30px;
-    }
-
-    .social-share a {
-      text-decoration: none;
-      padding: 12px;
-      background: var(--brand);
-      border-radius: 50%;
-      color: #fff;
-      font-size: 1.5rem;
-      transition: background 0.3s;
-    }
-
-    .social-share a:hover {
-      background: var(--brand-dark);
-    }
-
-    /* Sticky Floating CTA */
-    .sticky-cta {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 999;
-      background: var(--accent);
-      color: #fff;
-      padding: 14px 20px;
-      border-radius: var(--radius);
-      font-weight: bold;
-      box-shadow: var(--shadow);
-      text-decoration: none;
-      transition: background 0.3s;
-    }
-
-    .sticky-cta:hover {
-      background: #d97706;
-    }
-
-    /* Video Section */
-    #video-demo {
-      text-align: center;
-      padding: 60px 0;
-    }
-
-    #video-demo video {
-      max-width: 100%;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-    }
-
-    /* Exit-Intent Modal */
-    #exit-modal {
-      display: none;
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.6);
-      justify-content: center;
-      align-items: center;
-      z-index: 1000;
-    }
-
     #exit-modal .modal-content {
       background: #fff;
       padding: 40px;
@@ -347,7 +27,7 @@
   <header>
     <div class="container">
       <nav>
-        <a href="#" class="logo">Affiliate Pro</a>
+        <a href="#" class="logo">Invest with Acorns</a>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
           <li><a href="#comparison">Comparison</a></li>
@@ -361,9 +41,9 @@
 
   <!-- Hero Section -->
   <section class="hero" id="hero">
-    <h1>Start Investing with Acorns</h1>
-    <p>Invest your spare change and grow your wealth with Acorns' easy-to-use investment platform.</p>
-    <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="cta-btn">Start Investing</a>
+    <h1>Start Investing with Acorns Today!</h1>
+    <p>Make your money work for you with Acorns. Invest your spare change into a diversified portfolio.</p>
+    <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="cta-btn">Get Started Now</a>
     <div id="timer">Offer ends in <span id="countdown"></span></div>
   </section>
 
@@ -371,40 +51,41 @@
   <section class="container" id="features">
     <h2>Why Choose Acorns?</h2>
     <ul>
-      <li>Automatic Investment of Spare Change</li>
+      <li>Automated Investing with Round-Ups</li>
+      <li>Personalized Investment Portfolios</li>
+      <li>Low Monthly Fees with Transparent Pricing</li>
+      <li>Access to Financial Advisors for Expert Guidance</li>
       <li>Easy-to-Use Mobile App</li>
-      <li>Smart Portfolio Diversification</li>
-      <li>Track Your Growth</li>
-      <li>Low Fees for Beginners</li>
+      <li>Automatic Rebalancing of Your Portfolio</li>
     </ul>
   </section>
 
   <!-- Comparison Section -->
   <section class="container" id="comparison">
-    <h2>Compare Acorns with Other Investment Platforms</h2>
+    <h2>Acorns vs. Other Investment Apps</h2>
     <table>
       <tr>
         <th>Feature</th>
         <th>Acorns</th>
-        <th>Other Platforms</th>
+        <th>Competitor</th>
       </tr>
       <tr>
-        <td>Automatic Round-Ups</td>
+        <td>Automated Investing</td>
         <td>Yes</td>
         <td>No</td>
       </tr>
       <tr>
         <td>Low Fees</td>
         <td>Yes</td>
-        <td>Varies</td>
+        <td>High</td>
       </tr>
       <tr>
-        <td>Easy Mobile App</td>
+        <td>Financial Advisor Access</td>
         <td>Yes</td>
-        <td>Sometimes</td>
+        <td>No</td>
       </tr>
       <tr>
-        <td>Smart Portfolio</td>
+        <td>Round-Up Feature</td>
         <td>Yes</td>
         <td>No</td>
       </tr>
@@ -416,16 +97,16 @@
     <h2>What Our Users Are Saying</h2>
     <div class="testimonial-container" id="testimonial-container">
       <div class="testimonial">
-        <p>"Acorns made investing so simple, I saw my wealth grow without even thinking about it!"</p>
-        <div class="author">John D.</div>
+        <p>"Acorns made investing easy and accessible. Now I’m building wealth every time I buy coffee!"</p>
+        <div class="author">Jenna W.</div>
       </div>
       <div class="testimonial">
-        <p>"I love the round-up feature—small change adds up fast!"</p>
-        <div class="author">Sarah L.</div>
+        <p>"I love how Acorns rounds up my purchases and invests my spare change automatically. It’s effortless!"</p>
+        <div class="author">Greg T.</div>
       </div>
       <div class="testimonial">
-        <p>"A great platform for beginners looking to invest without all the complexity."</p>
-        <div class="author">Mark P.</div>
+        <p>"The Acorns app is simple to use, and the financial advisors have been invaluable in helping me grow my portfolio."</p>
+        <div class="author">Lily R.</div>
       </div>
     </div>
   </section>
@@ -441,16 +122,16 @@
 
   <!-- CTA Section -->
   <section class="container" id="cta">
-    <h2>Start Growing Your Wealth Today</h2>
-    <p>Enter your email to get started with Acorns and begin investing automatically.</p>
+    <h2>Start Investing Today</h2>
+    <p>Get started with Acorns in just a few minutes. Enter your email to join now. No spam—just wealth building!</p>
     <form class="email-form" onsubmit="redirectToAffiliate(event)">
       <input type="email" id="email" required placeholder="Enter your email" />
-      <button type="submit">Start Now</button>
+      <button type="submit">Get Started</button>
     </form>
   </section>
 
   <!-- Sticky CTA -->
-  <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="sticky-cta">Start Investing</a>
+  <a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" class="sticky-cta">Start Investing with Acorns</a>
 
   <!-- Social Media Share Buttons -->
   <section class="social-share">
@@ -468,14 +149,14 @@
   <!-- Exit Intent Modal -->
   <div id="exit-modal">
     <div class="modal-content">
-      <h2>Wait! Don’t Leave Yet!</h2>
-      <p>Start investing now before the offer expires!</p>
-      <button onclick="redirectToAffiliateModal()">Start Investing</button>
+      <h2>Hold on! Don’t Leave Yet!</h2>
+      <p>Take the first step towards building your financial future. Join Acorns today before the offer ends!</p>
+      <button onclick="redirectToAffiliateModal()">Start Investing Now</button>
     </div>
   </div>
 
   <footer>
-    <p>&copy; 2026 Palmo Kid Digital. All Rights Reserved.</p>
+    <p>&copy; 2026 Acorns. All Rights Reserved.</p>
   </footer>
 
   <script>
