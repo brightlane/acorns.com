@@ -216,6 +216,43 @@
         transform: translateY(0);
       }
     }
+
+    /* Exit Pop-up */
+    #exit-modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      justify-content: center;
+      align-items: center;
+      z-index: 1000;
+    }
+
+    #exit-modal .modal-content {
+      background: #fff;
+      padding: 40px;
+      border-radius: var(--border-radius);
+      text-align: center;
+      max-width: 500px;
+      width: 80%;
+    }
+
+    #exit-modal .modal-content button {
+      margin-top: 20px;
+      padding: 12px 20px;
+      border: none;
+      background: var(--primary-color);
+      color: #fff;
+      border-radius: var(--border-radius);
+      cursor: pointer;
+    }
+
+    #exit-modal .modal-content button:hover {
+      background: var(--button-hover-color);
+    }
   </style>
 </head>
 
@@ -237,29 +274,25 @@
   </section>
 
   <section class="features" id="features">
-    <h2><a href="#features" style="color: var(--primary-color); text-decoration: none;">Why Choose Acorns?</a></h2>
+    <h2><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" style="color: var(--primary-color); text-decoration: none;">Why Choose Acorns?</a></h2>
     <div class="feature-list">
       <div class="feature-item">
-        <a href="#automated-investing"><h3>Automated Investing</h3></a>
-        <p>Invest automatically with round-ups on your daily purchases. No effort required!</p>
+        <h3>Automatic Round-Ups</h3>
+        <p>Invest your spare change automatically with every purchase you make.</p>
       </div>
       <div class="feature-item">
-        <a href="#personalized-portfolios"><h3>Personalized Portfolios</h3></a>
-        <p>Acorns creates a personalized investment portfolio for you based on your goals.</p>
+        <h3>Diversified Portfolio</h3>
+        <p>Acorns provides low-cost, diversified investment portfolios tailored to your goals.</p>
       </div>
       <div class="feature-item">
-        <a href="#low-fees"><h3>Low Fees</h3></a>
-        <p>Acorns keeps its fees low, helping you build wealth faster with fewer costs.</p>
-      </div>
-      <div class="feature-item">
-        <a href="#financial-advice"><h3>Financial Advice</h3></a>
-        <p>Access financial advice and get expert guidance on managing your wealth.</p>
+        <h3>Smart Saving Features</h3>
+        <p>Take the guesswork out of saving and investing with Acorns' automated system.</p>
       </div>
     </div>
   </section>
 
   <section class="testimonials" id="testimonials">
-    <h2><a href="#testimonials" style="color: var(--primary-color); text-decoration: none;">What Our Customers Say</a></h2>
+    <h2><a href="https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo" style="color: var(--primary-color); text-decoration: none;">What Our Users Are Saying</a></h2>
     <div class="testimonial-item">
       <p>"Acorns helped me start investing with just my spare change. It's been an amazing way to build wealth!"</p>
       <div class="author">John D.</div>
@@ -267,10 +300,6 @@
     <div class="testimonial-item">
       <p>"I love how simple it is to set up and track my investments with Acorns."</p>
       <div class="author">Sarah L.</div>
-    </div>
-    <div class="testimonial-item">
-      <p>"I didn't know where to start with investing, but Acorns made it easy!"</p>
-      <div class="author">David M.</div>
     </div>
   </section>
 
@@ -289,19 +318,24 @@
     </div>
   </section>
 
-  <script>
-    // Daily Tip Generator
-    const tips = [
-      "Tip of the Day: Start with a small investment, and gradually increase your contributions.",
-      "Tip of the Day: Make sure to set your investment goals before getting started.",
-      "Tip of the Day: Compound interest works best when you start early!",
-      "Tip of the Day: Stay invested through market ups and downs for the best long-term results.",
-      "Tip of the Day: Review your investment portfolio at least once a year."
-    ];
+  <!-- Exit Pop-up -->
+  <div id="exit-modal">
+    <div class="modal-content">
+      <h2>Don't Leave Empty-Handed!</h2>
+      <p>Get started with Acorns today and make your spare change work for you!</p>
+      <button onclick="window.location.href='https://convert.ctypy.com/aff_c?offer_id=29449&aff_id=21885&utm_source=landingpage&utm_medium=affiliate&utm_campaign=promo'">Claim Your Deal Now</button>
+    </div>
+  </div>
 
-    const today = new Date();
-    const tipOfTheDay = tips[today.getDate() % tips.length];
-    alert(tipOfTheDay);  // You can display this alert however you want in your UI
+  <script>
+    // Exit Intent Modal
+    let exitModalShown = false;
+    document.addEventListener("mouseout", function (e) {
+      if (!exitModalShown && e.clientY < 0) {
+        document.getElementById("exit-modal").style.display = "flex";
+        exitModalShown = true;
+      }
+    });
   </script>
 </body>
 
