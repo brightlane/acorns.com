@@ -344,11 +344,11 @@ PAGES = []
 # ── 1. INDEX ──────────────────────────────────────────────────
 PAGES.append(dict(
 slug="index",
-title="Acorns Review 2025 — Is It Worth It? | AcornsGuide",
-desc="The independent guide to Acorns investing in 2025. Real reviews, fee breakdowns, portfolio analysis, and the honest truth about whether Acorns is right for you.",
-kw="acorns review 2025, acorns investing app, is acorns worth it, acorns micro investing",
-h1="Acorns 2025 — <span>Is It Worth It?</span>",
-tag="Independent Review · Updated 2025",
+title="Acorns Review 2026 — Is It Worth It? | AcornsGuide",
+desc="The independent guide to Acorns investing in 2026. Real reviews, fee breakdowns, portfolio analysis, and the honest truth about whether Acorns is right for you.",
+kw="acorns review 2026, acorns investing app, is acorns worth it, acorns micro investing",
+h1="Acorns 2026 — <span>Is It Worth It?</span>",
+tag="Independent Review · Updated 2026",
 hero_cta="🌱 Start Investing with Acorns",
 crumbs=[("Home",None)],
 faqs=[
@@ -371,7 +371,7 @@ body="""
     <div class="stat-card"><div class="num">SIPC</div><div class="label">$500K Protected</div></div>
   </div>
 
-  <h2>AcornsGuide Verdict — 2025</h2>
+  <h2>AcornsGuide Verdict — 2026</h2>
   <div class="rank-grid">
     <div class="rank-card">
       <div class="rank-num first">★</div>
@@ -440,10 +440,10 @@ body="""
 # ── 2. HOW IT WORKS ───────────────────────────────────────────
 PAGES.append(dict(
 slug="how-acorns-works",
-title="How Acorns Works 2025 — Round-Ups, Portfolios & Auto-Investing Explained",
-desc="Complete guide to how Acorns works in 2025. Round-Ups, recurring investments, ETF portfolios, and how your spare change actually grows into real wealth.",
-kw="how acorns works, acorns round ups explained, acorns investing explained 2025",
-h1="How Acorns Works — <span>Complete 2025 Guide</span>",
+title="How Acorns Works 2026 — Round-Ups, Portfolios & Auto-Investing Explained",
+desc="Complete guide to how Acorns works in 2026. Round-Ups, recurring investments, ETF portfolios, and how your spare change actually grows into real wealth.",
+kw="how acorns works, acorns round ups explained, acorns investing explained 2026",
+h1="How Acorns Works — <span>Complete 2026 Guide</span>",
 tag="Explained Simply · Step by Step",
 hero_cta="🌱 Try Acorns Free",
 crumbs=[("Home","index.html"),("How It Works",None)],
@@ -516,11 +516,11 @@ body="""
 # ── 3. ACORNS REVIEW ──────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-review",
-title="Acorns App Review 2025 — Pros, Cons, Fees & Is It Worth It?",
-desc="Honest Acorns app review for 2025. We break down every feature, fee, portfolio option, and compare it to alternatives so you can decide if Acorns is right for you.",
-kw="acorns app review 2025, acorns pros cons, acorns review honest, acorns worth it 2025",
-h1="Acorns App Review 2025 — <span>Honest Pros, Cons & Verdict</span>",
-tag="Full Review · Unbiased · 2025",
+title="Acorns App Review 2026 — Pros, Cons, Fees & Is It Worth It?",
+desc="Honest Acorns app review for 2026. We break down every feature, fee, portfolio option, and compare it to alternatives so you can decide if Acorns is right for you.",
+kw="acorns app review 2026, acorns pros cons, acorns review honest, acorns worth it 2026",
+h1="Acorns App Review 2026 — <span>Honest Pros, Cons & Verdict</span>",
+tag="Full Review · Unbiased · 2026",
 hero_cta="🌱 Try Acorns Today",
 crumbs=[("Home","index.html"),("Acorns Review",None)],
 faqs=[
@@ -582,11 +582,11 @@ body="""
 # ── 4. ACORNS VS ROBINHOOD ────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-vs-robinhood",
-title="Acorns vs Robinhood 2025 — Which Is Better for Beginners?",
-desc="Acorns vs Robinhood compared for 2025. Features, fees, investment options, and which app is better for your specific financial goals and experience level.",
-kw="acorns vs robinhood 2025, acorns or robinhood, robinhood vs acorns comparison",
-h1="Acorns vs Robinhood 2025 — <span>Which Should You Choose?</span>",
-tag="Head-to-Head Comparison · 2025",
+title="Acorns vs Robinhood 2026 — Which Is Better for Beginners?",
+desc="Acorns vs Robinhood compared for 2026. Features, fees, investment options, and which app is better for your specific financial goals and experience level.",
+kw="acorns vs robinhood 2026, acorns or robinhood, robinhood vs acorns comparison",
+h1="Acorns vs Robinhood 2026 — <span>Which Should You Choose?</span>",
+tag="Head-to-Head Comparison · 2026",
 hero_cta="🌱 Try Acorns Free",
 crumbs=[("Home","index.html"),("Acorns vs Robinhood",None)],
 faqs=[
@@ -637,11 +637,11 @@ body="""
 # ── 5. ACORNS VS STASH ────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-vs-stash",
-title="Acorns vs Stash 2025 — Which Micro-Investing App Wins?",
-desc="Acorns vs Stash compared for 2025. Both are micro-investing apps but with very different approaches. Find out which one is right for your goals and budget.",
-kw="acorns vs stash 2025, stash vs acorns comparison, best micro investing app 2025",
-h1="Acorns vs Stash 2025 — <span>Which Micro-Investing App Wins?</span>",
-tag="App Comparison · Micro-Investing · 2025",
+title="Acorns vs Stash 2026 — Which Micro-Investing App Wins?",
+desc="Acorns vs Stash compared for 2026. Both are micro-investing apps but with very different approaches. Find out which one is right for your goals and budget.",
+kw="acorns vs stash 2026, stash vs acorns comparison, best micro investing app 2026",
+h1="Acorns vs Stash 2026 — <span>Which Micro-Investing App Wins?</span>",
+tag="App Comparison · Micro-Investing · 2026",
 hero_cta="🌱 Choose Acorns",
 crumbs=[("Home","index.html"),("Acorns vs Stash",None)],
 faqs=[
@@ -699,9 +699,9 @@ body="""
 # ── 6. ROUND-UPS ──────────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-round-ups",
-title="Acorns Round-Ups 2025 — How Spare Change Investing Really Works",
-desc="Everything you need to know about Acorns Round-Ups in 2025. How they work, how much you'll actually invest, multipliers, and how to maximize your spare change.",
-kw="acorns round ups, spare change investing, acorns round ups how it works 2025",
+title="Acorns Round-Ups 2026 — How Spare Change Investing Really Works",
+desc="Everything you need to know about Acorns Round-Ups in 2026. How they work, how much you'll actually invest, multipliers, and how to maximize your spare change.",
+kw="acorns round ups, spare change investing, acorns round ups how it works 2026",
 h1="Acorns Round-Ups — <span>How Spare Change Becomes Real Wealth</span>",
 tag="Round-Ups Explained · Maximize Your Spare Change",
 hero_cta="🌱 Start Round-Ups Now",
@@ -769,11 +769,11 @@ body="""
 # ── 7. ACORNS LATER (IRA) ─────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-later-ira",
-title="Acorns Later IRA 2025 — Retirement Investing Made Simple",
-desc="Complete guide to Acorns Later in 2025. How the IRA works, Traditional vs Roth options, contribution limits, and why adding retirement investing to Acorns is a no-brainer.",
-kw="acorns later ira 2025, acorns retirement account, acorns roth ira, acorns later review",
+title="Acorns Later IRA 2026 — Retirement Investing Made Simple",
+desc="Complete guide to Acorns Later in 2026. How the IRA works, Traditional vs Roth options, contribution limits, and why adding retirement investing to Acorns is a no-brainer.",
+kw="acorns later ira 2026, acorns retirement account, acorns roth ira, acorns later review",
 h1="Acorns Later — <span>Retirement Investing on Autopilot</span>",
-tag="IRA Guide · Traditional & Roth · 2025",
+tag="IRA Guide · Traditional & Roth · 2026",
 hero_cta="🌱 Open Acorns Later IRA",
 crumbs=[("Home","index.html"),("Acorns Later IRA",None)],
 faqs=[
@@ -794,7 +794,7 @@ body="""
       <li>✅ Included in $3/month Personal plan — no extra fee</li>
       <li>✅ Automated contributions via Round-Ups</li>
       <li>✅ Tax-advantaged growth</li>
-      <li>✅ Contribute up to $7,000/year (2025 limit)</li>
+      <li>✅ Contribute up to $7,000/year (2026 limit)</li>
     </ul>
     <a href="{A}" class="cta pulse" target="_blank" rel="noopener sponsored">🌱 Open Acorns Later</a>
     <p class="tc">Investing involves risk. IRA rules and contribution limits apply. Consult a tax advisor.</p>
@@ -809,7 +809,7 @@ body="""
       <tr><td>Best if you expect</td><td>Lower tax rate in retirement</td><td><span class="badge-g">Higher tax rate in retirement</span></td></tr>
       <tr><td>Early withdrawal penalty</td><td>10% before age 59½ + taxes</td><td>Contributions can be withdrawn penalty-free; earnings have penalties</td></tr>
       <tr><td>Required minimum distributions</td><td>Yes — must start at age 73</td><td><span class="badge-g">No RMDs during your lifetime</span></td></tr>
-      <tr><td>2025 contribution limit</td><td>$7,000 ($8,000 if 50+)</td><td>$7,000 ($8,000 if 50+)</td></tr>
+      <tr><td>2026 contribution limit</td><td>$7,000 ($8,000 if 50+)</td><td>$7,000 ($8,000 if 50+)</td></tr>
     </tbody>
   </table>
 
@@ -830,11 +830,11 @@ body="""
 # ── 8. ACORNS EARLY ───────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-early",
-title="Acorns Early 2025 — Invest for Your Kids' Future",
-desc="Guide to Acorns Early in 2025 — the UTMA/UGMA custodial investment account for children. Set up investing for your kids in minutes with automatic contributions.",
-kw="acorns early 2025, acorns kids account, acorns custodial account, invest for children acorns",
+title="Acorns Early 2026 — Invest for Your Kids' Future",
+desc="Guide to Acorns Early in 2026 — the UTMA/UGMA custodial investment account for children. Set up investing for your kids in minutes with automatic contributions.",
+kw="acorns early 2026, acorns kids account, acorns custodial account, invest for children acorns",
 h1="Acorns Early — <span>Start Investing for Your Kids Today</span>",
-tag="Kids Investing · UTMA/UGMA · 2025",
+tag="Kids Investing · UTMA/UGMA · 2026",
 hero_cta="🌱 Open Acorns Early",
 crumbs=[("Home","index.html"),("Acorns Early",None)],
 faqs=[
@@ -888,11 +888,11 @@ body="""
 # ── 9. ACORNS FEES ────────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-fees",
-title="Acorns Fees 2025 — Complete Breakdown of Every Cost",
-desc="Complete breakdown of all Acorns fees in 2025. Monthly plans, ETF expense ratios, and the real cost of investing with Acorns at different balance levels.",
-kw="acorns fees 2025, how much does acorns cost, acorns fee breakdown, acorns monthly fee",
-h1="Acorns Fees 2025 — <span>Every Cost Broken Down</span>",
-tag="Fee Transparency · Full Breakdown · 2025",
+title="Acorns Fees 2026 — Complete Breakdown of Every Cost",
+desc="Complete breakdown of all Acorns fees in 2026. Monthly plans, ETF expense ratios, and the real cost of investing with Acorns at different balance levels.",
+kw="acorns fees 2026, how much does acorns cost, acorns fee breakdown, acorns monthly fee",
+h1="Acorns Fees 2026 — <span>Every Cost Broken Down</span>",
+tag="Fee Transparency · Full Breakdown · 2026",
 hero_cta="🌱 Start Investing — First Month Free",
 crumbs=[("Home","index.html"),("Acorns Fees",None)],
 faqs=[
@@ -905,7 +905,7 @@ body="""
 <section class="cb">
   <p class="lead">Acorns is not free — and understanding exactly what you pay matters. The monthly fee is simple, but its real cost as a percentage of your balance changes dramatically as your investments grow. Here's the complete, honest breakdown.</p>
 
-  <h2>Acorns Pricing Plans — 2025</h2>
+  <h2>Acorns Pricing Plans — 2026</h2>
   <table class="dt">
     <thead><tr><th>Plan</th><th>Monthly Fee</th><th>Annual Fee</th><th>Includes</th></tr></thead>
     <tbody>
@@ -954,11 +954,11 @@ body="""
 # ── 10. SIGN UP GUIDE ─────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-sign-up",
-title="How to Sign Up for Acorns 2025 — Step-by-Step Guide",
-desc="Step-by-step guide to signing up for Acorns in 2025. From download to first investment in under 10 minutes — everything you need to know to get started.",
-kw="how to sign up for acorns, acorns sign up 2025, open acorns account, acorns account setup",
+title="How to Sign Up for Acorns 2026 — Step-by-Step Guide",
+desc="Step-by-step guide to signing up for Acorns in 2026. From download to first investment in under 10 minutes — everything you need to know to get started.",
+kw="how to sign up for acorns, acorns sign up 2026, open acorns account, acorns account setup",
 h1="How to Sign Up for Acorns — <span>Start in 10 Minutes</span>",
-tag="Sign Up Guide · Step by Step · 2025",
+tag="Sign Up Guide · Step by Step · 2026",
 hero_cta="🌱 Open My Acorns Account",
 crumbs=[("Home","index.html"),("Sign Up Guide",None)],
 faqs=[
@@ -1026,15 +1026,15 @@ body="""
 # ── 11. PROMO CODES ───────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-promo-code",
-title="Acorns Promo Code 2025 — Get a Free Bonus When You Sign Up",
-desc="Find the best Acorns promo codes and sign-up bonuses for 2025. Get free bonus investments just for opening your account through the right link.",
-kw="acorns promo code 2025, acorns bonus, acorns referral code, acorns free money signup",
-h1="Acorns Promo Code 2025 — <span>Get Your Free Signup Bonus</span>",
+title="Acorns Promo Code 2026 — Get a Free Bonus When You Sign Up",
+desc="Find the best Acorns promo codes and sign-up bonuses for 2026. Get free bonus investments just for opening your account through the right link.",
+kw="acorns promo code 2026, acorns bonus, acorns referral code, acorns free money signup",
+h1="Acorns Promo Code 2026 — <span>Get Your Free Signup Bonus</span>",
 tag="Promo Codes · Free Bonus · Limited Time",
 hero_cta="🎁 Claim Acorns Bonus Now",
 crumbs=[("Home","index.html"),("Promo Codes",None)],
 faqs=[
-  ("Does Acorns have a promo code for 2025?","Acorns typically offers sign-up bonuses rather than traditional promo codes. Our affiliate link activates the best available current offer — usually a free bonus investment credited to your account after you make your first deposit."),
+  ("Does Acorns have a promo code for 2026?","Acorns typically offers sign-up bonuses rather than traditional promo codes. Our affiliate link activates the best available current offer — usually a free bonus investment credited to your account after you make your first deposit."),
   ("How do I claim the Acorns sign-up bonus?","Click our link on this page, sign up for a new Acorns account, and make your first deposit. The bonus investment is credited to your account automatically — usually within a few business days."),
   ("Can existing Acorns users get a promo code bonus?","No — sign-up bonuses are for new accounts only. Existing users can earn referral bonuses by inviting friends to sign up."),
   ("How does the Acorns referral program work?","Each Acorns user gets a unique referral link. When a referred friend signs up and makes their first investment, both the referrer and the new user may receive a bonus investment. Check the Acorns app for the current referral offer amount."),
@@ -1045,7 +1045,7 @@ body="""
 
   <div class="offer-box hot">
     <div class="ob-badge">🎁 Best Current Offer</div>
-    <div class="score-row"><span class="stars">★★★★★</span><span class="score">Active</span><span class="score-sub">— Verified June 2025</span></div>
+    <div class="score-row"><span class="stars">★★★★★</span><span class="score">Active</span><span class="score-sub">— Verified June 2026</span></div>
     <h3>Acorns Sign-Up Bonus — Claim via Our Link</h3>
     <ul>
       <li>✅ Free bonus investment credited on first deposit</li>
@@ -1083,11 +1083,11 @@ body="""
 # ── 12. PORTFOLIOS ────────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-portfolios",
-title="Acorns Portfolios 2025 — Which Portfolio Should You Choose?",
-desc="Complete guide to all Acorns portfolio options in 2025. Conservative, Moderate, Aggressive, and ESG portfolios explained — with returns data and how to choose.",
-kw="acorns portfolios 2025, acorns conservative vs aggressive, best acorns portfolio, acorns esg portfolio",
-h1="Acorns Portfolios 2025 — <span>Which One Should You Pick?</span>",
-tag="Portfolio Guide · Returns Data · 2025",
+title="Acorns Portfolios 2026 — Which Portfolio Should You Choose?",
+desc="Complete guide to all Acorns portfolio options in 2026. Conservative, Moderate, Aggressive, and ESG portfolios explained — with returns data and how to choose.",
+kw="acorns portfolios 2026, acorns conservative vs aggressive, best acorns portfolio, acorns esg portfolio",
+h1="Acorns Portfolios 2026 — <span>Which One Should You Pick?</span>",
+tag="Portfolio Guide · Returns Data · 2026",
 hero_cta="🌱 Start With the Right Portfolio",
 crumbs=[("Home","index.html"),("Acorns Portfolios",None)],
 faqs=[
@@ -1141,11 +1141,11 @@ body="""
 # ── 13. BEGINNERS ─────────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-for-beginners",
-title="Acorns for Beginners 2025 — Complete Getting Started Guide",
-desc="The complete beginner's guide to Acorns investing in 2025. Everything you need to know to open your account, start investing, and build wealth from zero.",
-kw="acorns for beginners 2025, acorns beginner guide, start investing acorns, acorns investing first time",
+title="Acorns for Beginners 2026 — Complete Getting Started Guide",
+desc="The complete beginner's guide to Acorns investing in 2026. Everything you need to know to open your account, start investing, and build wealth from zero.",
+kw="acorns for beginners 2026, acorns beginner guide, start investing acorns, acorns investing first time",
 h1="Acorns for Beginners — <span>Your Complete Getting Started Guide</span>",
-tag="Beginner Guide · Start From Zero · 2025",
+tag="Beginner Guide · Start From Zero · 2026",
 hero_cta="🌱 Start Investing Today",
 crumbs=[("Home","index.html"),("For Beginners",None)],
 faqs=[
@@ -1207,9 +1207,9 @@ body="""
 # ── 14. ACORNS EARN ───────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-earn",
-title="Acorns Earn 2025 — Get Bonus Investments From Shopping",
-desc="How Acorns Earn works in 2025. Get bonus investments when you shop at 450+ partner brands. Turn everyday spending into free investments automatically.",
-kw="acorns earn 2025, acorns found money, acorns shopping rewards, acorns earn bonus investments",
+title="Acorns Earn 2026 — Get Bonus Investments From Shopping",
+desc="How Acorns Earn works in 2026. Get bonus investments when you shop at 450+ partner brands. Turn everyday spending into free investments automatically.",
+kw="acorns earn 2026, acorns found money, acorns shopping rewards, acorns earn bonus investments",
 h1="Acorns Earn — <span>Get Paid to Shop, Invest the Rewards</span>",
 tag="Earn Rewards · 450+ Brands · Free Investments",
 hero_cta="🌱 Start Earning Bonus Investments",
@@ -1246,7 +1246,7 @@ body="""
   <h3>Method 2: Acorns Browser Extension</h3>
   <p>Install the free Acorns browser extension on Chrome or Safari. When you visit a partner website, the extension automatically activates the Earn offer. Click through and make your purchase normally — the bonus investment is credited within 60–90 days.</p>
 
-  <h2>Sample Acorns Earn Offers — June 2025</h2>
+  <h2>Sample Acorns Earn Offers — June 2026</h2>
   <table class="dt">
     <thead><tr><th>Brand</th><th>Offer Type</th><th>Bonus</th></tr></thead>
     <tbody>
@@ -1274,11 +1274,11 @@ body="""
 # ── 15. TAX GUIDE ─────────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-tax-guide",
-title="Acorns Tax Guide 2025 — What You Owe on Your Investments",
-desc="Complete Acorns tax guide for 2025. How dividends, capital gains, and IRA withdrawals are taxed. What forms Acorns sends, and how to minimize your tax bill.",
-kw="acorns taxes 2025, acorns 1099 form, acorns capital gains tax, acorns tax guide",
-h1="Acorns Tax Guide 2025 — <span>What You Owe on Your Investments</span>",
-tag="Tax Guide · 1099 Forms · 2025",
+title="Acorns Tax Guide 2026 — What You Owe on Your Investments",
+desc="Complete Acorns tax guide for 2026. How dividends, capital gains, and IRA withdrawals are taxed. What forms Acorns sends, and how to minimize your tax bill.",
+kw="acorns taxes 2026, acorns 1099 form, acorns capital gains tax, acorns tax guide",
+h1="Acorns Tax Guide 2026 — <span>What You Owe on Your Investments</span>",
+tag="Tax Guide · 1099 Forms · 2026",
 hero_cta="🌱 Invest Smarter With Acorns",
 crumbs=[("Home","index.html"),("Tax Guide",None)],
 faqs=[
@@ -1309,7 +1309,7 @@ body="""
   <h2>Capital Gains Tax on Acorns</h2>
   <p>When Acorns rebalances your portfolio (selling some ETFs to buy others), those sales generate capital gains or losses that appear on your 1099-B. You must report these on your federal tax return.</p>
   <table class="dt">
-    <thead><tr><th>Holding Period</th><th>Tax Rate (2025)</th><th>Applies To</th></tr></thead>
+    <thead><tr><th>Holding Period</th><th>Tax Rate (2026)</th><th>Applies To</th></tr></thead>
     <tbody>
       <tr><td>Under 1 year (short-term)</td><td>Ordinary income rate (10–37%)</td><td>Investments sold within 1 year</td></tr>
       <tr><td>Over 1 year (long-term)</td><td><span class="badge-g">0%, 15%, or 20%</span></td><td>Investments held over 1 year</td></tr>
@@ -1334,11 +1334,11 @@ body="""
 # ── 16. WITHDRAW ──────────────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-withdraw",
-title="How to Withdraw Money from Acorns 2025 — Complete Guide",
-desc="Step-by-step guide to withdrawing money from Acorns in 2025. How long it takes, fees, IRA withdrawal rules, and what to watch out for before cashing out.",
-kw="how to withdraw from acorns, acorns withdrawal 2025, acorns cash out, acorns withdrawal time",
-h1="How to Withdraw from Acorns — <span>Complete 2025 Guide</span>",
-tag="Withdrawal Guide · No Fees · 2025",
+title="How to Withdraw Money from Acorns 2026 — Complete Guide",
+desc="Step-by-step guide to withdrawing money from Acorns in 2026. How long it takes, fees, IRA withdrawal rules, and what to watch out for before cashing out.",
+kw="how to withdraw from acorns, acorns withdrawal 2026, acorns cash out, acorns withdrawal time",
+h1="How to Withdraw from Acorns — <span>Complete 2026 Guide</span>",
+tag="Withdrawal Guide · No Fees · 2026",
 hero_cta="🌱 Invest With Confidence",
 crumbs=[("Home","index.html"),("Withdraw Money",None)],
 faqs=[
@@ -1389,10 +1389,10 @@ body="""
 # ── 17. IS ACORNS SAFE ────────────────────────────────────────
 PAGES.append(dict(
 slug="is-acorns-safe",
-title="Is Acorns Safe? 2025 — Security, SIPC Protection & Legitimacy",
+title="Is Acorns Safe? 2026 — Security, SIPC Protection & Legitimacy",
 desc="Is Acorns safe and legitimate? Full security review covering SEC registration, SIPC protection, encryption, and what happens to your money if Acorns shuts down.",
-kw="is acorns safe, acorns legit 2025, acorns security, acorns sipc protection",
-h1="Is Acorns Safe? — <span>Full Security Review 2025</span>",
+kw="is acorns safe, acorns legit 2026, acorns security, acorns sipc protection",
+h1="Is Acorns Safe? — <span>Full Security Review 2026</span>",
 tag="Safety Review · SIPC Protected · SEC Registered",
 hero_cta="🌱 Invest Safely with Acorns",
 crumbs=[("Home","index.html"),("Is Acorns Safe?",None)],
@@ -1450,11 +1450,11 @@ body="""
 # ── 18. ACORNS VS BETTERMENT ──────────────────────────────────
 PAGES.append(dict(
 slug="acorns-vs-betterment",
-title="Acorns vs Betterment 2025 — Which Robo-Advisor Is Better?",
-desc="Acorns vs Betterment compared for 2025. Fees, features, tax-loss harvesting, and which robo-advisor is the right choice at different balance levels.",
-kw="acorns vs betterment 2025, betterment vs acorns, best robo advisor 2025",
-h1="Acorns vs Betterment 2025 — <span>Which Robo-Advisor Wins?</span>",
-tag="Robo-Advisor Comparison · 2025",
+title="Acorns vs Betterment 2026 — Which Robo-Advisor Is Better?",
+desc="Acorns vs Betterment compared for 2026. Fees, features, tax-loss harvesting, and which robo-advisor is the right choice at different balance levels.",
+kw="acorns vs betterment 2026, betterment vs acorns, best robo advisor 2026",
+h1="Acorns vs Betterment 2026 — <span>Which Robo-Advisor Wins?</span>",
+tag="Robo-Advisor Comparison · 2026",
 hero_cta="🌱 Choose Acorns",
 crumbs=[("Home","index.html"),("Acorns vs Betterment",None)],
 faqs=[
@@ -1496,7 +1496,7 @@ body="""
   </div>
 
   <a href="{A}" class="cta" target="_blank" rel="noopener sponsored">🌱 Start with Acorns</a>
-  <p class="tc" style="margin-top:10px">Investing involves risk. Fee comparison based on 2025 pricing.</p>
+  <p class="tc" style="margin-top:10px">Investing involves risk. Fee comparison based on 2026 pricing.</p>
 </section>
 """
 ))
@@ -1504,7 +1504,7 @@ body="""
 # ── 19. COMPOUND INTEREST ─────────────────────────────────────
 PAGES.append(dict(
 slug="acorns-compound-interest",
-title="Acorns & Compound Interest 2025 — How Small Investments Grow Big",
+title="Acorns & Compound Interest 2026 — How Small Investments Grow Big",
 desc="How compound interest makes your Acorns investments grow over time. Real examples of how $5/day turns into tens of thousands of dollars through the power of compounding.",
 kw="acorns compound interest, compound investing acorns, how acorns grows money, acorns long term growth",
 h1="Acorns & Compound Interest — <span>How $5/Day Becomes $100,000</span>",
